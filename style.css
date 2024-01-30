@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+button{
+    border:none;
+    cursor:pointer;
+}
+input{
+    border: none;
+    border-radius: 12px;
+}
+button>i{
+    text-align: center;
+    color:hsl(219, 65%, 34%);
+}
+.whole-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-size: 300%;
+    animation: bg-animation 7s infinite alternate;
+}
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+.container{
+    height: 25rem;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(135deg, #93a5cf, #e4efe9);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.20s translateY 1s;
+}
+.container:hover,.container:focus{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+.container:active{
+    transform: translateY(-4px);
+}
+.inner-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row{
+    margin: 20px 0px;
+}
+.screen{
+    padding: 10px;
+    width: 13.3rem;
+    height: 4rem;
+    margin-left: 10px;
+    background-color: hsl(0, 0%, 90%);
+}
+.operators{
+    color:hsl(219, 65%, 34%);
+    background: linear-gradient(to right, #a6c0fe, #6a8cc7);
+    border-radius:15px;
+}
+.numbers{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 25%;
+}
+.numbers,.operators{
+    padding: 20px;
+    margin: 0px 10px;
+    width: 2.5rem; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    transition:box-shadow 0.20s translateY 0.15s;
+}
+.numbers:hover,.operators:hover,.numbers:focus,.operators:focus{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+.numbers:active,.operators:active{
+    transform: translateY(-4px);
+}
+.equal{
+    width: 6rem;
+}
