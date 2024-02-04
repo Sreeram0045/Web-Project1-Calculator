@@ -37,7 +37,7 @@ button>i{
     }
 }
 .container{
-    height: 25rem;
+    height: fit-content;
     border-radius: 25px;
     padding-left: 20px;
     padding-right: 20px;
@@ -61,9 +61,9 @@ button>i{
 }
 .screen{
     padding: 10px;
-    width: 13.3rem;
+    width: 15em;
     height: 4rem;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     background-color: hsl(0, 0%, 90%);
 }
 .operators{
@@ -78,7 +78,8 @@ button>i{
 .numbers,.operators{
     padding: 20px;
     margin: 0px 10px;
-    width: 2.5rem; 
+    width: 5em;
+     
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
     transition:box-shadow 0.20s translateY 0.15s;
 }
@@ -91,4 +92,13 @@ button>i{
 }
 .equal{
     width: 6rem;
+}
+
+.screen-container {
+    width: 70%;
+    margin-left: 0.5em;
+
+}
+.screen {
+    width: 100%;
 }
